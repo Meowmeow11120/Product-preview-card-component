@@ -53,12 +53,19 @@ body {
 
 }
 
+.mobile {
+
+    display: none !important;
+
+}
+
+
 .content {
 
     width: 300px;
 
 
-    margin: 30px;
+    padding: 20px;
 
 }
 
@@ -91,6 +98,7 @@ p {
     color: hsl(228, 12%, 48%);
 
     font-family: 'Montserrat', sans-serif;
+    padding-right: 25px;
 
 }
 
@@ -153,10 +161,9 @@ p {
 
 }
 
-.mobile {
-
-    display: none !important;
-
+.gap:hover {
+    background-color: hsl(158, 36%, 31%);
+    transition: 500ms;
 }
 
 @media (max-width:535px) {
