@@ -64,8 +64,8 @@ body {
 
     width: 300px;
 
-
-    padding: 25px;
+    padding: 0 25 0 25px;
+    margin: 25px;
 
 }
 
@@ -98,7 +98,6 @@ p {
     color: hsl(228, 12%, 48%);
 
     font-family: 'Montserrat', sans-serif;
-    padding-right: 25px;
 
 }
 
@@ -189,7 +188,7 @@ p {
 
     .content {
         width: 100%;
-
+padding: 20px;
     }
 
     .mobile {
