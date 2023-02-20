@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+
+    margin: 0;
+
+    border: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: .875rem;
+
+    background-color: hsl(30deg, 38%, 92%);
+
+}
+
+.container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    background-color: white;
+
+    width: 600px;
+
+
+    margin: 300px auto;
+
+    border-radius: 10px;
+
+
+
+
+
+}
+
+
+
+.desktop {
+
+    border-radius: 10px 0px 0px 10px;
+    width: 300px;
+    object-fit: contain;
+
+}
+
+.content {
+
+    width: 300px;
+
+
+    margin: 30px;
+
+}
+
+.mark {
+
+    color: hsl(228, 12%, 48%);
+
+    font-size: 0.875rem;
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+}
+
+.header h1 {
+
+    font-family: 'Fraunces', sans-serif;
+
+    color: hsl(158, 36%, 37%);
+
+    padding: 20px 40px 20px 0px;
+
+}
+
+p {
+
+    color: hsl(228, 12%, 48%);
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.price {
+
+    margin: 25px 0px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.saleprice {
+
+    color: hsl(158, 36%, 37%);
+
+    font-family: 'Fraunces', sans-serif;
+
+}
+
+.originalprice {
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-decoration: line-through;
+
+    color: hsl(228, 12%, 48%);
+
+}
+
+.gap {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    background-color: hsl(158, 36%, 37%);
+
+    height: auto;
+
+    height: 50px;
+
+    border-radius: 5px;
+
+}
+
+
+.gap button {
+
+    background-color: hsl(158, 36%, 37%);
+
+    color: white;
+
+}
+
+.mobile {
+
+    display: none !important;
+
+}
+
+@media (max-width:767px) {
+
+    .desktop {
+
+        display: none !important;
+
+    }
+
+    .mobile {
+
+        display: inline !important;
+
+    }
+
+    .container {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .content {
+        width: 100%;
+
+    }
+
+    .mobile {
+        object-fit: contain;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+}
